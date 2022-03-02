@@ -5435,7 +5435,6 @@ fieldset:disabled .btn {
 .progress {
     display: flex;
     height: 1rem;
-    overflow: hidden;
     font-size: 0.75rem;
     background-color: #e9ecef;
     border-radius: 0.25rem;
@@ -5445,7 +5444,6 @@ fieldset:disabled .btn {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    overflow: hidden;
     color: #fff;
     text-align: center;
     white-space: nowrap;
@@ -11334,16 +11332,16 @@ header.masthead .h1 {
     color: #FFF;
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin: 0 0 30px;
+    margin: 20px 0 10px;
 }
 
 .progress {
-    height: 10px;
+    height: 14px;
     background: #FFF;
     border-radius: 0;
+    /* overflow: hidden; */
     box-shadow: none;
-    margin-bottom: 40px;
-    overflow: visible;
+    margin-bottom: 20px;
     position: relative;
 }
 
@@ -11358,7 +11356,7 @@ header.masthead .h1 {
 .progress-red .progress-bar:before {
     content: "";
     width: 100%;
-    border-top: 11px double #f95738;
+    border-top: 14px double #f95738;
     border-right: 15px solid #f95738;
     position: absolute;
     top: 0;
@@ -11368,7 +11366,7 @@ header.masthead .h1 {
 .progress-green .progress-bar:before {
     content: "";
     width: 100%;
-    border-top: 11px double #f95738;
+    border-top: 13px double #f95738;
     border-right: 15px solid #65c168;
     position: absolute;
     top: 0;
@@ -11378,7 +11376,7 @@ header.masthead .h1 {
 .progress-yellow .progress-bar:before {
     content: "";
     width: 100%;
-    border-top: 11px double #f95738;
+    border-top: 13px double #f95738;
     border-right: 15px solid #ecb82d;
     position: absolute;
     top: 0;
@@ -11388,7 +11386,7 @@ header.masthead .h1 {
 .progress-blue .progress-bar:before {
     content: "";
     width: 100%;
-    border-top: 11px double #f95738;
+    border-top: 13px double #f95738;
     border-right: 15px solid #165692;
     position: absolute;
     top: 0;
@@ -11396,12 +11394,16 @@ header.masthead .h1 {
 }
 
 .progress .progress-value {
-    font-size: 18px;
+    font-size: 12px;
     font-weight: 700;
-    color: #000;
+    color: #959DAB;
     position: absolute;
-    top: -32px;
+    top: -20px;
     right: -5px;
+}
+
+.progress-value {
+    overflow: visible !important;
 }
 
 .progress.yellow .progress-bar:before {
