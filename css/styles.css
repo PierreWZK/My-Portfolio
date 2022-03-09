@@ -11458,3 +11458,11 @@ header.masthead .h1 {
 .bi-heart-fill {
     color: var(--bs-red);
 }
+
+.bi-check-square-fill {
+    color: #4ade80;
+}
+
+.footer-icon i {
+    padding: 1em;
+}

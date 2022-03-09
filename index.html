@@ -59,51 +59,36 @@
             <hr class="divider" />
             <div class="row gx-4 gx-lg-5">
                 <div class="col-lg-3 col-md-6">
-                    <div class="mt-5">
+                    <div class="mt-5 ">
                         <div class="mb-2 text-center"><i class="bi-code-slash fs-1 text-primary "></i>
-                            <h3 class="h4 mb-2">Langages</h3>
-                        </div>
-                        <h3 class="progress-title">Javascript</h3>
-                        <div class="progress progress-red">
-                            <div class="progress-bar" style="width:80%; ">
-                                <div class="progress-value">80%</div>
+                            <h3 class="h4 mb-3 text-center">Langages</h3>
+                            <div class="d-inline-flex p-2 container-Outils">
+                                <i class="bi-check-square-fill" style="padding-right: 1em;"></i>
+                                <span> HTML | CSS </span>
                             </div>
-                        </div>
-
-                        <h3 class="progress-title">HTML5 | CSS3</h3>
-                        <div class="progress progress-red">
-                            <div class="progress-bar" style="width:75%; ">
-                                <div class="progress-value">70%</div>
+                            <div class="d-inline-flex p-2 container-Outils">
+                                <i class="bi-check-square-fill" style="padding-right: 1em;"></i>
+                                <span> Javascript </span>
                             </div>
-                        </div>
-
-                        <h3 class="progress-title">PHP</h3>
-                        <div class="progress progress-red ">
-                            <div class="progress-bar" style="width:70%; ">
-                                <div class="progress-value">70%</div>
+                            <div class="d-inline-flex p-2 container-Outils">
+                                <i class="bi-check-square-fill" style="padding-right: 1em;"></i>
+                                <span> PHP </span>
                             </div>
-                        </div>
-
-                        <h3 class="progress-title">Java</h3>
-                        <div class="progress progress-red ">
-                            <div class="progress-bar" style="width:55%; ">
-                                <div class="progress-value">60%</div>
+                            <div class="d-inline-flex p-2 container-Outils">
+                                <i class="bi-check-square-fill" style="padding-right: 1em;"></i>
+                                <span> Java </span>
                             </div>
-                        </div>
-
-                        <h3 class="progress-title">Laravel</h3>
-                        <div class="progress progress-red ">
-                            <div class="progress-bar" style="width:50%; ">
-                                <div class="progress-value">55%</div>
+                            <div class="d-inline-flex p-2 container-Outils">
+                                <i class="bi-check-square-fill" style="padding-right: 1em;"></i>
+                                <span> Laravel </span>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-lg-3 col-md-6 text-center">
+                <div class="col-lg-3 col-md-6">
                     <div class="mt-5 ">
-                        <div class="mb-2 "><i class="bi-gear fs-1 text-primary"></i></div>
-                        <h3 class="h4 mb-2 ">Outils</h3>
+                        <div class="mb-2 text-center"><i class="bi-gear fs-1 text-primary"></i></div>
+                        <h3 class="h4 mb-2 text-center">Outils</h3>
                         <div class="d-inline-flex p-2 container-Outils">
                             <i class="bi-star-fill" style="padding-right: 1em;"></i>
                             <span> Github </span>
@@ -236,11 +221,11 @@
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6 mb-5">
-                    <a class="portfolio-box" href="assets/img/portfolio/fullsize/6.jpg" title="Project Name">
-                        <img class="img-fluid" src="assets/img/portfolio/thumbnails/6.jpg" alt="..." />
+                    <a class="portfolio-box" href="assets/img/Projets/ToDo_Capture.png" title="GSBx">
+                        <img class="img-fluid" src="assets/img/Projets/ToDo_Capture.png" alt="ToDo Capture d'écran" />
                         <div class="portfolio-box-caption">
-                            <div class="project-name">ToDoList</div>
-                            <div class="project-description text-white-50 m-4">Application codée en Laravel, avec une base de données MySQL. Il a pour but de pouvoir créer, gérer et organiser des tâches.</div>
+                            <div class="project-name">GSB</div>
+                            <div class="project-description text-white-50 m-4">Application qui permet de consulter, créer ou modifier des rapport de visite, via un service web par un practicien <br> Codée en Laravel</div>
                         </div>
                     </a>
                 </div>
@@ -278,11 +263,11 @@
                         <!-- Email address input-->
                         <div class="form-floating mb-3 ">
                             <input class="form-control " id="email" type="email" name="email" placeholder=" " required/>
-                            <label for="email">Email address</label>
+                            <label for="email">Adresse mail</label>
                         </div>
                         <!-- Message input-->
                         <div class="form-floating mb-3">
-                            <textarea placeholder="Your Message" class="form-control" name="Message" rows="10" style="height: 10rem" required></textarea>
+                            <textarea placeholder=" " class="form-control" name="Message" rows="10" style="height: 10rem" required></textarea>
                             <label for="message ">Message</label>
                         </div>
                         <!-- Submit Button-->
@@ -299,7 +284,13 @@
         </div>
     </section>
     <!------------------------------------------- Footer ------------------------------------------->
-    <footer class="py-5 ">
+    <footer class="pb-4x ">
+        <div class="container px-4 px-lg-5 mb-5">
+            <div class="small text-center text-muted footer-icon">
+                <a href="https://github.com/pierrewzk"><i class="bi-github fs-2 text-muted "></i></a>
+                <a href="https://linkedin.com/in/pierre-dolivet"><i class="bi-linkedin fs-2 text-muted "></i></a>
+            </div>
+        </div>
         <div class="container px-4 px-lg-5 ">
             <div class="small text-center text-muted ">Copyright &copy; 2022 - DOLIVET Pierre</div>
         </div>
@@ -309,11 +300,7 @@
     <!-- SimpleLightbox plugin JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js "></script>
     <!-- Core theme JS-->
-    <script src="js/scripts.js "></script>
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <!-- * *                               SB Forms JS                               * *-->
-    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <script src="js/scripts.js"></script>
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js "></script>
 </body>
 
