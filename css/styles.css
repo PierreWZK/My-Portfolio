@@ -11466,3 +11466,10 @@ header.masthead .h1 {
 .footer-icon i {
     padding: 1em;
 }
+
+.CV-DL {
+    background-image: url("../assets/img/banner-to-cv.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0;
+}
