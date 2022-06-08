@@ -13,7 +13,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
     <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
+        rel="stylesheet" type="text/css" />
     <!-- SimpleLightbox plugin CSS-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
@@ -25,12 +26,25 @@
     <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
         <div class="container px-4 px-lg-5">
             <a class="navbar-brand" href="#page-top">DOLIVET Pierre</a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto my-2 my-lg-0">
                     <li class="nav-item"><a class="nav-link" href="#services">Compétences</a></li>
                     <li class="nav-item"><a class="nav-link" href="#portfolio">Projets</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle nav-link" type="button" data-bs-toggle="dropdown">Autres</button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/experiences.html">Expériences</a></li>
+                                <li><a class="dropdown-item" href="/formations.html">Formations</a></li>
+                                <div class="dropdown-divider"></div>
+                                <li><a class="dropdown-item" href="/assets/DPierre-CV.pdf" target="_blank">CV</a></li>
+                            </ul>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -41,11 +55,13 @@
             <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center">
                 <div class="col-lg-8 align-self-end">
                     <h3 class="text-white font-weight-bold text-left">Bonjour,</h1>
-                        <h1 class="text-white font-weight-bold">Pierre Dolivet <br>Développeur Web et Java</h1>
+                        <h1 class="text-white font-weight-bold">Pierre Dolivet <br>ㅤㅤDéveloppeur Web</h1>
                         <hr class="divider" />
                 </div>
                 <div class="col-lg-8 align-self-baseline text-center">
-                    <p class="text-white-75 mb-5">Je suis passionné depuis plus de 6 ans dans tout le domaine informatique. J'ai depuis peu, decidé de m'orienter vers la création et le développement d'applications web.</p>
+                    <p class="text-white-75 mb-5">Je suis passionné depuis plus de 6 ans dans tout le domaine
+                        informatique. J'ai depuis peu, decidé de m'orienter vers la création et le développement
+                        d'applications web.</p>
                     <a class="btn btn-primary btn-xl" href="#services">En savoir plus</a>
                 </div>
             </div>
@@ -163,7 +179,7 @@
             <div class="row gx-4 gx-lg-5 justify-content-end w-65 ms-auto">
                 <div class="col-lg-8 text-center">
                     <h2 class="mb-4 text-white">Télécharger maintenant mon CV !</h2>
-                    <a class="btn btn-primary btn-xl" href="/assets/DPierre-CV.pdf" blank="blank">Download Now!</a>
+                    <a class="btn btn-primary btn-xl mb-3" href="/assets/DPierre-CV.pdf" target="_blank">Download Now!</a>
                 </div>
             </div>
         </div>
@@ -175,20 +191,27 @@
         <div class="container-fluid p-0">
             <div class="row g-0">
                 <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="https://github.com/PierreWZK/ToDoList" title="ToDoList with Laravel" target="blank">
+                    <a class="portfolio-box" href="https://github.com/PierreWZK/ToDoList" title="ToDoList with Laravel"
+                        target="blank">
                         <img class="img-fluid" src="assets/img/Projets/ToDo_Capture.png" alt="TodoList aperçu" />
                         <div class="portfolio-box-caption">
                             <div class="project-name">ToDoList</div>
-                            <div class="project-description text-white-50 m-4">Application codée en Laravel, avec une base de données MySQL. Il a pour but de pouvoir créer, gérer et organiser des tâches. <br> Codée en PHP (Laravel) et MySQL</div>
+                            <div class="project-description text-white-50 m-4">Application codée en Laravel, avec une
+                                base de données MySQL. Il a pour but de pouvoir créer, gérer et organiser des tâches.
+                                <br> Codée en PHP (Laravel) et MySQL</div>
                         </div>
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="https://github.com/PierreWZK/Puissance4" title="Puissance 4" target="blank">
-                        <img class="img-fluid" src="assets/img/Projets/Puissance4.jpg" alt="Puissance 4 Project Image" />
+                    <a class="portfolio-box" href="https://github.com/PierreWZK/Puissance4" title="Puissance 4"
+                        target="blank">
+                        <img class="img-fluid" src="assets/img/Projets/Puissance4.jpg"
+                            alt="Puissance 4 Project Image" />
                         <div class="portfolio-box-caption">
                             <div class="project-name">Puissance 4</div>
-                            <div class="project-description text-white-50 m-4">Projet réalisé en groupe. Le projet comporte un système de multi-joueur réalisé avec socket.io, un système de victoire/défaites, ainsi qu'un chat d'échange. <br> Codée en HTML/CSS/JS</div>
+                            <div class="project-description text-white-50 m-4">Projet réalisé en groupe. Le projet
+                                comporte un système de multi-joueur réalisé avec socket.io, un système de
+                                victoire/défaites, ainsi qu'un chat d'échange. <br> Codée en HTML/CSS/JS</div>
                         </div>
                     </a>
                 </div>
@@ -197,25 +220,34 @@
                         <img class="img-fluid" src="assets/img/Projets/Quizz.jpg" alt="Quizz Image Accueil" />
                         <div class="portfolio-box-caption">
                             <div class="project-name">Quizz</div>
-                            <div class="project-description text-white-50 m-4">Projet réalisé en groupe. Une application web en forme de jeu. Une série de QCM sur un thèmes choisis auparavant.<br> Codée en HTML/CSS/JS et JSON</div>
+                            <div class="project-description text-white-50 m-4">Projet réalisé en groupe. Une application
+                                web en forme de jeu. Une série de QCM sur un thèmes choisis auparavant.<br> Codée en
+                                HTML/CSS/JS et JSON</div>
                         </div>
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="https://github.com/PierreWZK/CFUN_Maven" title="AP CFUN" target="blank">
+                    <a class="portfolio-box" href="https://github.com/PierreWZK/CFUN_Maven" title="AP CFUN"
+                        target="blank">
                         <img class="img-fluid" src="assets/img/Projets/CFUN.png" alt="CFUN Logo Project" />
                         <div class="portfolio-box-caption">
                             <div class="project-name">CFUN</div>
-                            <div class="project-description text-white-50 m-4">Projet réalisé en groupe. L'objectif est de gérer les entrées et sorties d'une salle de sport. Nous avons dû réaliser plusieurs missions.<br>Codée en Java et SQLite</div>
+                            <div class="project-description text-white-50 m-4">Projet réalisé en groupe. L'objectif est
+                                de gérer les entrées et sorties d'une salle de sport. Nous avons dû réaliser plusieurs
+                                missions.<br>Codée en Java et SQLite</div>
                         </div>
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="https://github.com/PierreWZK/TowerMan" title="Tower Man Game" target="blank">
-                        <img class="img-fluid" src="assets/img/Projets/TowerMan.JPG" alt="TowerMan GameJam School Accueil Game" />
+                    <a class="portfolio-box" href="https://github.com/PierreWZK/TowerMan" title="Tower Man Game"
+                        target="blank">
+                        <img class="img-fluid" src="assets/img/Projets/TowerMan.JPG"
+                            alt="TowerMan GameJam School Accueil Game" />
                         <div class="portfolio-box-caption">
                             <div class="project-name">TowerMan</div>
-                            <div class="project-description text-white-50 m-4">Projet réalisé en groupe. Jeu 2D - Plateformer, développé lors d'une GameJam School suivant le thème "Elevé".<br> Codée en C# (Godot)</div>
+                            <div class="project-description text-white-50 m-4">Projet réalisé en groupe. Jeu 2D -
+                                Plateformer, développé lors d'une GameJam School suivant le thème "Elevé".<br> Codée en
+                                C# (Godot)</div>
                         </div>
                     </a>
                 </div>
@@ -224,7 +256,9 @@
                         <img class="img-fluid" src="assets/img/Projets/GSB.png" alt="ToDo Capture d'écran" />
                         <div class="portfolio-box-caption">
                             <div class="project-name">GSB</div>
-                            <div class="project-description text-white-50 m-4">Application qui permet de consulter, créer ou modifier des rapport de visite, via un service web par un practicien <br> Codée en Laravel</div>
+                            <div class="project-description text-white-50 m-4">Application qui permet de consulter,
+                                créer ou modifier des rapport de visite, via un service web par un practicien <br> Codée
+                                en Laravel</div>
                         </div>
                     </a>
                 </div>
@@ -238,7 +272,8 @@
                 <div class="col-lg-8 col-xl-6 text-center ">
                     <h2 class="mt-0 ">Me Contacter</h2>
                     <hr class="divider " />
-                    <p class="text-muted mb-5 ">Vous pouvez me contacter ici pour d'éventuelles informations supplémentaires, ou autres. Je reste disponible sur mon téléphone ci-dessous si nécessaire.</p>
+                    <p class="text-muted mb-5 ">Vous pouvez me contacter ici pour d'éventuelles informations
+                        supplémentaires, ou autres. Je reste disponible sur mon téléphone ci-dessous si nécessaire.</p>
                 </div>
             </div>
             <div class="row gx-4 gx-lg-5 justify-content-center mb-5 ">
@@ -248,16 +283,19 @@
                         <input type="hidden" name="_subject" value="Contact mail Portfolio">
                         <!-- Email address input-->
                         <div class="form-floating mb-3 ">
-                            <input class="form-control " id="email" type="email" name="email" placeholder=" " required/>
+                            <input class="form-control " id="email" type="email" name="email" placeholder=" "
+                                required />
                             <label for="email">Adresse mail</label>
                         </div>
                         <!-- Message input-->
                         <div class="form-floating mb-3">
-                            <textarea placeholder=" " class="form-control" name="Message" rows="10" style="height: 10rem" required></textarea>
+                            <textarea placeholder=" " class="form-control" name="Message" rows="10"
+                                style="height: 10rem" required></textarea>
                             <label for="message ">Message</label>
                         </div>
                         <!-- Submit Button-->
-                        <div class="d-grid "><button class="btn btn-primary btn-xl " id="submitButton " type="submit ">Submit</button></div>
+                        <div class="d-grid "><button class="btn btn-primary btn-xl " id="submitButton "
+                                type="submit ">Submit</button></div>
                     </form>
                 </div>
             </div>
