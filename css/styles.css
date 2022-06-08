@@ -3254,7 +3254,7 @@ fieldset:disabled .btn {
 .btn-warning:active:focus,
 .btn-warning.active:focus,
 .show>.btn-warning.dropdown-toggle:focus {
-    /* box-shadow: 0 0 0 0.25rem rgba(217, 164, 6, 0.5); */
+    box-shadow: 0 0 0 0.25rem rgba(217, 164, 6, 0.5);
 }
 
 .btn-warning:disabled,
@@ -3299,7 +3299,7 @@ fieldset:disabled .btn {
 .btn-danger:active:focus,
 .btn-danger.active:focus,
 .show>.btn-danger.dropdown-toggle:focus {
-    /* box-shadow: 0 0 0 0.25rem rgba(225, 83, 97, 0.5); */
+    box-shadow: 0 0 0 0.25rem rgba(225, 83, 97, 0.5);
 }
 
 .btn-danger:disabled,
@@ -3430,7 +3430,7 @@ fieldset:disabled .btn {
 .btn-outline-primary:active:focus,
 .btn-outline-primary.active:focus,
 .btn-outline-primary.dropdown-toggle.show:focus {
-    /* box-shadow: 0 0 0 0.25rem rgba(244, 98, 58, 0.5); */
+    box-shadow: 0 0 0 0.25rem rgba(244, 98, 58, 0.5);
 }
 
 .btn-outline-primary:disabled,
