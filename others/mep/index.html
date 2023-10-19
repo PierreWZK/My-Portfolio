@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeP AJD ?</title>
+
+    <!-- Connection script JS -->
+    <script src="script.js"></script>
+
+    <!-- Connection less stylesheet -->
+    <link rel="stylesheet/less" type="text/css" href="style.less" />
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+</head>
+
+<body>
+    <h2>On met en prod</h2>
+    <h1 id="jour">Un Lundi ?</h1>
+
+    <div id="divGif">
+        <img id="gif" src="https://media.giphy.com/media/3o7aD2VU7RdYDx1P1K/giphy.gif" alt="gif">
+        <p id="comment">C'est partiiii !</p>
+    </div>
+
+    <div id="othersButton">
+        <button id="starring" onclick="window.location = 'https://github.com/PierreWZK/MeP-AJD';">Starring me</button>
+        <button id="shareTwitter"
+            onclick="window.location = 'https://twitter.com/intent/tweet?text=Est-ce+qu%27on+met+en+Prod+aujourd%27hui+%3f%20pierredolvet.fr/others/mep/+de+@PierreWZK'">Share</button>
+    </div>
+    
+    <div id="showMeteo" onclick="showMeteo();">
+        🌧️
+    </div>
+    <div id="meteo">
+        <div id="cont_00b47fae616b10600d9d4e9a642b4202"><script type="text/javascript" async src="https://www.tameteo.com/wid_loader/00b47fae616b10600d9d4e9a642b4202"></script></div>
+    </div>
+    <div id="spotifyEmbed">    
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWZa8CSUr0hCY?utm_source=generator&theme=0" width="30%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+</body>
+
+</html>
