@@ -18,15 +18,19 @@ Bienvenue dans le projet "MeP AJD" ! Ce projet a pour objectif de faciliter la d
 
 ## Exemple de commentaire pour un GIF du lundi :
 
-![GIF](https://media.tenor.com/Mi8ShiXdkgUAAAAC/floki-to-the-moon-floki-rocket.gif)  
-"🚀 C'est partiiiiiiiiii ! Lundi est le jour parfait pour envoyer nos projets vers de nouveaux horizons ! 🚀"
+![GIF](https://media.tenor.com/7gsDUzyFIDUAAAAC/fart-rocket.gif)  
+"🚀 C'est partiiiiiiiiii ! Lundi, est le jour, parfait pour envoyer nos projets vers de nouveaux horizons ! 🚀"
 
 ## Exemple de commentaire pour un GIF du vendredi :
 
-![GIF](https://media.tenor.com/diT3dyu_Nx0AAAAC/zendaya-let-me-calm-down.gif)  
-"💀 HOulA ! Toi tu veux faire planté le site ce Week-End ? Alors reste à ta place et ne mets rien en prod ! 💀"
+![GIF](https://media.tenor.com/3HYwal_nHtwAAAAC/dead-my-honest-reaction.gif)  
+"💀 HOulA ! Toi, tu veux faire planter le site ce week-end ? Alors reste à ta place et ne mets rien en prod ! 💀"
 
 Nous espérons que ce projet apportera une touche de fun et d'efficacité à votre processus de mise en production. N'hésitez pas à contribuer et à personnaliser le projet selon vos besoins et vos préférences. Amusez-vous bien !
+
+## Hebergement
+
+Si vous souhaitez voir à quoi ressemble le site. Cliquez [ici](https://www.pierredolivet.fr/others/mep)
 
 ## Contribution
 

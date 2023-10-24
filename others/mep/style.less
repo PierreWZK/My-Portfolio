@@ -1,6 +1,11 @@
 body {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
+}
+
+main {
+    margin-bottom: 2rem;
 }
 
 h1, h2, #divGif {
@@ -18,10 +23,11 @@ h1 {
     p {
         font-size: x-large;
         max-width: 70vw;
+        text-align: center;
     }
     img {
-        max-width: 70vw;
-        max-height: 40vh;
+        max-width: 75vw;
+        max-height: 55vh;
     }
 }
 
@@ -66,4 +72,42 @@ h1 {
     justify-content: center;
     width: 100vw;
     margin-top: 3rem;
+}
+
+// En dessous de 600px de largeur on change l'attr 'width' à 95% de spotifyEmbed > iframe 
+// Au dessus on le mets à 50%
+
+#spotifyEmbed {
+    iframe {
+        width: 80vw;
+        max-width: 80vw;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #spotifyEmbed {
+        iframe {
+            width: 95vw;
+            max-width: 95vw;
+        }
+    }
+}
+
+// Scroller de la page stylisée sur le body
+
+::-webkit-scrollbar {
+    width: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
