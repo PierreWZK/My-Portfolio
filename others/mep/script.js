@@ -23,7 +23,15 @@ function launchPage() {
     });
     //! GIF DU JOUR + Commentaire du jour
 
-
+    //! On refait la fonction toutes les 10 minutes pour changer le gif
+    setInterval(function () {
+        //? Récupérer le result du promise (urlGif)
+        let urlGif = makeNewGif(dayName);
+        urlGif.then((result) => {
+            let gif = document.getElementById("gif");
+            gif.src = result;
+        });
+    }, 600000);
 }
 
 function getDay(val) {
