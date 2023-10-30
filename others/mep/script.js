@@ -128,7 +128,7 @@ function randomSearchPrompt(dayName) {
         case 'Un Vendredi ?':
             randomPrompt = [
                 'mauvaischoix',
-                'hellno',
+                'OhNoo',
                 'apero',
                 'jamais',
                 'arrete'
