@@ -210,7 +210,7 @@ function getCommentRandom(dayName, textPrompt) {
             "HOP HOP HOP ! Demain c'est férié, donc ne touches à rien, retourne à ta place et dev SEULEMENT en local !",
             "La veille d'un jour férié, prenons une pause. Le travail peut attendre, profitons de ce moment pour nous ressourcer !",
             "Demain, c'est jour férié. La veille est un moment pour préparer une transition en douceur. Évitons les changements majeurs aujourd'hui !",
-            "Vas-y mets en prod, on va rien dire... SI TU VEUX TE FAIRE VIRER !",
+            "Vas-y mets en prod, on va rien dire... SAUF SI TU VEUX TE FAIRE VIRER !",
         ]
 
         commentText = ferieComment[Math.floor(Math.random() * ferieComment.length)]
