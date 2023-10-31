@@ -159,6 +159,13 @@ function randomSearchPrompt(dayName) {
             randomPrompt = ['ERREUR'];
     }
 
+    if (jourFerieTomorrow()) {
+        randomPrompt = [
+            'Ferié',
+            'NotWorking',
+        ];
+    }
+
     let randomTextPrompt = randomPrompt[Math.floor(Math.random() * randomPrompt.length)]
 
     getCommentRandom(dayName, randomTextPrompt)
@@ -195,6 +202,7 @@ function getCommentRandom(dayName, textPrompt) {
     let commentText = "BLABLA";
     if (textPrompt == 'ERREUR') commentText = "Erreur, le site marche plus à l'aide !";
 
+    console.log(jourFerieTomorrow());
     if (jourFerieTomorrow()) {
         ferieComment = [
             "HOP HOP HOP ! Demain c'est férié, donc ne touches à rien, retourne à ta place et dev SEULEMENT en local !",
@@ -277,36 +285,37 @@ function getCommentRandom(dayName, textPrompt) {
 }
 
 function jourFerieTomorrow() {
-    let year = new Date().getFullYear();
-    let url = 'https://calendrier.api.gouv.fr/jours-feries/metropole/' + year + '.json'
+    return new Promise((resolve, reject) => {
+        let year = new Date().getFullYear();
+        let url = 'https://calendrier.api.gouv.fr/jours-feries/metropole/' + year + '.json'
 
-    let request = new XMLHttpRequest();
+        let request = new XMLHttpRequest();
 
-    request.open('GET', url, true);
+        request.open('GET', url, true);
+        let isFerie = false;
 
-    request.onload = function () {
-        if (request.status >= 200 && request.status < 400) {
-            let data = JSON.parse(this.response);
+        request.onload = function () {
+            if (request.status >= 200 && request.status < 400) {
+                let data = JSON.parse(this.response);
 
-            let tomorrow = new Date();
-            tomorrow.setDate(tomorrow.getDate() + 1);
-            let tomorrowString = tomorrow.toISOString().slice(0, 10);
+                let tomorrow = new Date();
+                tomorrow.setDate(tomorrow.getDate() + 1);
+                let tomorrowString = tomorrow.toISOString().slice(0, 10);
 
-            let isFerie = false;
-            for (const [key, value] of Object.entries(data)) {
-                if (key == tomorrowString) {
-                    isFerie = true;
+                for (const [key, value] of Object.entries(data)) {
+                    console.log(key, tomorrowString, key == tomorrowString);
+                    if (key == tomorrowString) {
+                        isFerie = true;
+                    }
                 }
+                resolve(isFerie);
+            } else {
+                reject(false);
             }
-            return isFerie;
-        } else {
-            return false;
-        }
-    };
+        };
 
-    request.send();
-
-    return false;
+        request.send();
+    });
 }
 
 let meteoShow = false;
