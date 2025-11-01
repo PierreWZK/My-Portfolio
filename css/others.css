@@ -1,0 +1,155 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    height: 100vh;
+    background: #121212;
+    color: white;
+    font-family: monospace;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+:root {
+    --bg-color-1: #121212;
+    --bg-color-2: #FFD433;
+    --bg-color-3: #FF90E8;
+    --padding: 1rem 10rem;
+    --font-family: monospace;
+    --step: 0.5rem;
+}
+
+.buttonClass:is(:hover, :focus-visible) {
+    --active: 1;
+}
+
+.buttonClass {
+    --active: 0;
+    color: white;
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+    font-family: var(--font-family);
+    font-weight: bold;
+    border: 0;
+    background: transparent;
+    padding: 0;
+}
+
+.buttonClass .spanClass:first-of-type {
+    padding: var(--padding);
+}
+
+.buttonClass .spanClass:not(:first-of-type) {
+    position: absolute;
+}
+
+[aria-hidden] {
+    color: transparent;
+}
+
+.buttonClass .spanClass {
+    inset: 0;
+    display: grid;
+    background: var(--bg);
+    place-items: center;
+    transition: 0.2s ease;
+    border: 2px solid black;
+    translate:
+        calc((var(--active) * var(--coefficient, 0)) * (var(--step) * -1))
+        calc((var(--active) * var(--coefficient, 0)) * (var(--step) * -1));
+}
+
+.spanClass:nth-of-type(1) {
+    --bg: var(--bg-color-3);
+}
+
+.spanClass:nth-of-type(2) {
+    --coefficient: 1;
+    --bg: var(--bg-color-2);
+}
+
+.spanClass:nth-of-type(3) {
+    --coefficient: 2;
+    --bg: var(--bg-color-1);
+}
+
+.buttonClass:active {
+    --active: 0.5;
+}
+
+/* ########################################################### */
+
+.buttonPlus:is(:hover, :focus-visible) {
+    --active: 1;
+}
+
+.buttonPlus {
+    --active: 0;
+    color: white;
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+    font-family: var(--font-family);
+    font-weight: bold;
+    border: 0;
+    background: transparent;
+    padding: 0;
+    margin-top: 1.5rem;
+}
+
+.buttonPlus .spanPlus:first-of-type {
+    padding: var(--padding);
+}
+
+.buttonPlus .spanPlus:not(:first-of-type) {
+    position: absolute;
+}
+
+[aria-hidden] {
+    color: transparent;
+}
+
+.buttonPlus .spanPlus {
+    inset: 0;
+    display: grid;
+    background: var(--bg);
+    place-items: center;
+    transition: 0.2s ease;
+    border: 2px solid black;
+    translate:
+        calc((var(--active) * var(--coefficient, 0)) * (var(--step) * 0))
+        calc((var(--active) * var(--coefficient, 0)) * (var(--step) * +1));
+}
+
+.spanPlus:nth-of-type(1) {
+    --bg: var(--bg-color-2);
+}
+
+.spanPlus:nth-of-type(2) {
+    --coefficient: 1;
+    --bg: var(--bg-color-1);
+}
+
+/* .spanPlus:nth-of-type(3) {
+    --coefficient: 2;
+    --bg: var(--bg-color-1);
+} */
+
+.buttonPlus:active {
+    --active: 0.5;
+}
+
+#divPlus {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 0.5rem;
+}
